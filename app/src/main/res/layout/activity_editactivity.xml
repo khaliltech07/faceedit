@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Module.editactivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#F5F5DC"
+
+       >
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Original"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/toggleButton"
+            android:layout_marginStart="95dp"
+            android:textOn="Processed"
+            android:textStyle="italic"
+            android:background="@drawable/rounded_button"
+            />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="180dp"
+            android:background="@drawable/rounded_button"
+            android:text="reset"></Button>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="back"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#F5F5DC"
+            />
+
+
+        <Button
+            android:id="@+id/btnApply"
+            android:text="Save"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#F5F5DC"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_height="fill_parent"
+        android:background="#FFEFD5">
+
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFAFA"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#FFEFD5"
+            />
+
+
+
+        <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+            android:background="@android:color/white"
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            app:icon_height="25dp"
+            app:icon_width="25dp"
+            app:item_marginBottom="7dp"
+            app:item_marginLeft="12dp"
+            app:item_marginRight="12dp"
+            app:item_marginTop="8dp"
+            app:item_textColor="@android:color/black"
+            app:item_textSize="4sp"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFEFD5"
+            >
+        </LinearLayout>
+
+
+        </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
